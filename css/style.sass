@@ -1,0 +1,356 @@
+*, *::after, *::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+$topColor: #fafdfd
+$primaryColor: #415167
+$accentColor: #C7A17A
+$darkGray: #151D28
+$lightGray: #EDF0F5
+%montserrat-displaylarge
+    font-family: 'Montserrat Black'
+    font-size: 54px
+    line-height: 70px
+%montserrat-displaymedium
+    font-family: 'Montserrat Black'
+    font-size: 30px
+    line-height: 34px
+%nunito-title
+    font-family: 'Nunito Bold'
+    font-size: 24px
+    line-height: 28px
+%nunito-subtitle
+    font-family: 'Nunito Semibold'
+    font-size: 20px
+    line-height: 24px
+%nunito-price
+    font-family: 'Nunito Semibold'
+    font-size: 20px
+    line-height: 24px
+%nunito-body
+    font-family: 'Nunito Regular'
+    font-size: 16px
+    line-height: 20px
+%nunito-list
+    font-family: 'Nunito Regular'
+    font-size: 12px
+    line-height: 20px
+%nunito-dicsription
+    font-family: 'Nunito Lightitalic'
+    font-size: 15px
+    line-height: 20px
+%nunito-button
+    font-family: 'Nunito Bold'
+    font-size: 16px
+    line-height: 20px
+body
+    background-color: $topColor
+.container
+    width: 1400px
+    margin: auto
+header
+    .header__container
+        display: flex
+        height: 768px
+        .header__left
+            padding: 70px 0
+            position: relative
+            right: -200px
+            .header__title
+                .title
+                    @extend %montserrat-displaylarge
+                    color: $primaryColor
+                    margin-top: 380px
+                    line-height: 70px
+                    .title__un
+                        background-color: $accentColor
+                        color: #fff
+                        display: block
+                        padding: 5px 10px
+        .header__middle
+            .middle__img
+        .header__right
+            background-color: $primaryColor
+            width: 358px
+            padding: 89px 59px
+            .icon__buy
+                text-decoration: none
+                color: $lightGray
+                font-weight: 700
+            .header__menu
+                margin-top: 125px
+                list-style: none
+                color: $lightGray
+                @extend %nunito-list
+                display: flex
+                flex-direction: column
+                .active
+                    text-decoration: none
+                    color: $lightGray
+                    font-weight: 700
+                .nonactive
+                    text-decoration: none
+                    color: $lightGray
+                    font-weight: 300
+                .list
+                    padding-bottom: 30px
+section
+    text-align: center
+    .section__subtitle
+        padding-top: 90px
+        @extend %nunito-subtitle
+        color: #415167
+    .section__title
+        @extend  %montserrat-displaymedium
+        color: $primaryColor
+    .section__content
+        display: flex
+        justify-content: space-around
+        margin-bottom: 100px
+        .content__coffee
+            margin-top: 90px
+            width: 226px
+            .content__coffee-img
+            .content__coffee-title
+                @extend %nunito-title
+                color: #232C38
+                padding: 40px 0 12px
+            .content__coffee-subtitle
+                @extend %nunito-body
+                color: #151D28
+                line-height: 22px
+main
+    background-color: $topColor
+    .hidden__box
+        width: 384px
+        height: 894px
+        background-color: $primaryColor
+        position: absolute
+    .vision__box
+        z-index: 10
+        position: relative
+        padding: 0 100px
+        .favorite__review
+            text-align: center
+            padding-bottom: 70px
+            .fav__rev-sub
+                padding-top: 90px
+                @extend %nunito-subtitle
+                color: #415167
+            .fav__rev-title
+                @extend  %montserrat-displaymedium
+                color: $primaryColor
+        .rev__slider
+            display: flex
+            padding-bottom: 90px
+            .slider__slide
+                .slide
+                    display: flex
+                    margin: 16px 21px
+                    width: 560px
+                    height: 256px
+                    border-radius: 2px
+                    box-shadow: 0 5px 20px #ffffffdb
+                    .slide__img
+                        background-color: #edf0f5e3
+                        img
+                            width: 256px
+                            height: 256px
+                    .slide__content
+                        background-color: #fff
+                        width: 325px
+                        padding: 42px 45px
+                        span
+                            @extend %nunito-body
+                            color: #C7A17A
+                            padding-bottom: 8px
+                        h4
+                            @extend %nunito-title
+                            color: #232C38
+                            padding-bottom: 24px
+                        p
+                            @extend %nunito-dicsription
+                            color: #151D28
+                        .button
+                            margin-top: 18px
+                            display: flex
+                            .button__order
+                                @extend %nunito-button
+                                text-decoration: none
+                                color: #F9FBFF
+                                background-color: $accentColor
+                                display: block
+                                width: 120px
+                                height: 32px
+                                border-radius: 18px
+                                box-shadow: 0 1px 1px #b16e38a6
+                                text-align: center
+                                padding: 6px 0
+                            .button__order-info
+                                @extend %nunito-button
+                                text-decoration: none
+                                color: #415167
+                                padding: 6px 0 6px 20px
+    .box__hidden
+        width: 1100px
+        height: 802px
+        background-color: $lightGray
+        position: absolute
+        display: block
+    .box__vision
+        padding: 0 100px
+        position: relative
+        .giftset__review
+            padding-bottom: 70px
+            .gift__rev-sub
+                padding-top: 90px
+                @extend %nunito-subtitle
+                color: #415167
+                text-align: center
+            .gift__rev-title
+                @extend  %montserrat-displaymedium
+                color: $primaryColor
+                text-align: center
+            .accordion__slide
+                .slide__plide
+                    display: flex
+                    .accord__img
+                        margin-left: -300px
+                        margin-top: 50px
+                    .accord__slide
+                        text-align: left
+                        padding: 40px 20px 20px 60px
+                        span
+                            @extend %nunito-body
+                            color: #C7A17A
+                            padding-bottom: 8px
+                        h4
+                            @extend %nunito-title
+                            color: #232C38
+                            padding-bottom: 24px
+                        p
+                            @extend %nunito-dicsription
+                            color: #151D28
+                        .accord__icon
+                            display: flex
+                            justify-content: space-between
+                            padding-top: 30px
+                            padding-bottom: 30px
+                            .accord__icon-c
+                                display: flex
+                                text-decoration: none
+                                justify-content: start
+                            .accord__icon-m
+                                display: flex
+                                text-decoration: none
+                                justify-content: start
+                            .ici
+                                padding-left: 15px
+                            .cii
+                                padding-left: 15px
+                        .accord__button
+                            display: flex
+                            justify-content: space-around
+                            .accord__button-order
+                                @extend %nunito-button
+                                text-decoration: none
+                                color: #F9FBFF
+                                background-color: $accentColor
+                                display: block
+                                width: 120px
+                                height: 32px
+                                border-radius: 18px
+                                box-shadow: 0 1px 1px #b16e38a6
+                                text-align: center
+                                padding: 6px 0
+                            .accord__button-info
+                                @extend %nunito-button
+                                text-decoration: none
+                                color: #415167
+                                padding: 6px 0 6px 20px
+    .combo__hidden
+        width: 300px
+        height: 906px
+        background-color: $primaryColor
+        position: relative
+        float: right
+    .combo__vision
+        position: absolute
+        display: flex
+        flex-direction: column
+        padding: 0 100px
+        .combo__v-box
+            text-align: center
+            padding-bottom: 60px
+            .combo__box-sub
+                padding-top: 70px
+                @extend %nunito-subtitle
+                color: #415167
+            .combo__box-title
+                @extend  %montserrat-displaymedium
+                color: $primaryColor
+        .combo__slider
+            display: flex
+            justify-content: space-around
+            margin-bottom: 90px
+            .combo__slide
+                box-shadow: 0 0 10px #ffffffdb
+                width: 340px
+                height: 562px
+                margin: 0 39px
+                .combo__img
+                    background-color: #edf0f5e3
+                    width: 340px
+                .combo__content
+                    background-color: #fff
+                    width: 340px
+                    padding: 40px 30px
+                    span
+                        @extend %nunito-body
+                        color: #C7A17A
+                        padding-bottom: 8px
+                        padding-right: 20px
+                    .lined
+                        text-decoration: line-through
+                        display: inline
+                    h4
+                        @extend %nunito-title
+                        color: #232C38
+                        padding-bottom: 24px
+                    p
+                        @extend %nunito-dicsription
+                        color: #151D28
+                    .combo__button
+                        margin-top: 30px
+                        margin-bottom: 7px
+                        display: flex
+                        .combo__button-order
+                            @extend %nunito-button
+                            text-decoration: none
+                            color: #F9FBFF
+                            background-color: $accentColor
+                            display: block
+                            width: 120px
+                            height: 32px
+                            border-radius: 18px
+                            box-shadow: 0 1px 1px #b16e38a6
+                            text-align: center
+                            padding: 6px 0
+                        .combo__button-info
+                            @extend %nunito-button
+                            text-decoration: none
+                            color: #415167
+                            padding: 6px 0 6px 20px
+footer
+    background-color: $lightGray
+    display: flex
+    justify-content: center
+    position: relative
+    bottom: 0
+    z-index: 12
+    color: #3f4854
+    width: 100%
+    .footer__text
+        @extend %nunito-dicsription
+        padding: 10px 0
+        text-align: center
